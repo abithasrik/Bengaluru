@@ -31,13 +31,13 @@ class Batch(models.Model):
         return f"{self.course.course_name} - {self.date} {self.time}"
 
 # ---------------- Trainer Model ----------------
-# class Trainer(models.Model):
-#     name = models.CharField(max_length=150)
-#     expertise = models.CharField(max_length=255)
-#     bio = models.TextField(blank=True, null=True)
+class Trainer(models.Model):
+    name = models.CharField(max_length=150)
+    expertise = models.CharField(max_length=255)
+    bio = models.TextField(blank=True, null=True)
 
-#     def __str__(self):
-#         return self.name
+    def __str__(self):
+        return self.name
     
 
 # ---------------- Training Features ----------------
